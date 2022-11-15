@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "message",
+      "attributes": {
+        "content": "Per placerat varius conubia",
+        "created-at": "2017-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "2",
+      "type": "message",
+      "attributes": {
+        "content": "Sagittis mollis maximus urna vehicula",
+        "created-at": "2017-03-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "3",
+      "type": "message",
+      "attributes": {
+        "content": "Conubia curabitur dignissim cubilia pulvinar nunc habitasse ultricies per mollis",
+        "created-at": "2017-03-01T00:00:00.000Z"
+      }
+    }
+  ]
+}

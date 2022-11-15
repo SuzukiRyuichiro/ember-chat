@@ -6,8 +6,11 @@ export default class ChatroomsRoute extends Route {
     const { data } = await res.json();
 
     return data.map((chatroom) => {
+      const { id, attributes } = chatroom;
+
       return {
-        name: chatroom.attributes.name,
+        id,
+        ...attributes,
       };
     });
   }

@@ -3,5 +3,8 @@
 <p class='text-lg'>Chatrooms available</p>
 
 {{#each @model as |chatroom|}}
-  <p>{{chatroom.name}}</p>
+  <p><LinkTo
+      @route='chatroom'
+      @model={{chatroom}}
+    >{{chatroom.name}}</LinkTo></p>
 {{/each}}
