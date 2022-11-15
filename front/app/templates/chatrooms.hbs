@@ -1,0 +1,7 @@
+{{page-title "Chatrooms"}}
+<ul>
+  {{#each @model as |chatroom|}}
+  <li><LinkTo @route="chatrooms.show" @model={{chatroom}}>{{chatroom.name}}</LinkTo></li>
+  {{/each}}
+</ul>
+{{outlet}}
