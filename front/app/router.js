@@ -6,8 +6,4 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {
-  this.route('chatrooms', function () {
-    this.route('show', { path: '/:id' });
-  });
-});
+Router.map(function () {});
