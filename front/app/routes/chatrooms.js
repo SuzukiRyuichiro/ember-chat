@@ -6,6 +6,6 @@ export default class ChatroomsRoute extends Route {
 
   async model() {
     const res = await this.store.findAll('chatroom');
-    return res.data;
+    return res;
   }
 }
