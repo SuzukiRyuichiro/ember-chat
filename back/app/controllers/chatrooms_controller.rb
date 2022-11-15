@@ -4,4 +4,10 @@ class ChatroomsController < ApplicationController
 
     render json: @chatrooms
   end
+
+  def show
+    @chatroom = Chatroom.includes(:messages).find(params[:id])
+
+    render json: @chatroom.messages
+  end
 end
