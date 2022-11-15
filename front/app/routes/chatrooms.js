@@ -1,17 +1,10 @@
 import Route from '@ember/routing/route';
+import { service } from '@ember/service';
 
 export default class ChatroomsRoute extends Route {
-  async model() {
-    const res = await fetch('/chatrooms.json');
-    const { data } = await res.json();
+  @service store;
 
-    return data.map((chatroom) => {
-      const { id, attributes } = chatroom;
-
-      return {
-        id,
-        ...attributes,
-      };
-    });
+  model() {
+    return this.store.findAll('chatroom', { include: 'messages' });
   }
 }

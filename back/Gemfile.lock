@@ -98,6 +98,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsonapi-resources (0.10.7)
+      activerecord (>= 4.1)
+      concurrent-ruby
+      railties (>= 4.1)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -184,6 +188,7 @@ DEPENDENCIES
   devise_token_auth
   faker
   jbuilder
+  jsonapi-resources
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors

@@ -8,8 +8,14 @@ john = User.create(email: 'mail@mail.com', password: '123123', name: 'John Doe',
 michael = User.create(email: 'test@test.com', password: '123123', name: 'Michael Jackson', nickname: 'MJ')
 
 general = Chatroom.create(name: 'General')
+random = Chatroom.create(name: 'random')
 
 10.times do
   author = [john, michael].sample
   Message.create(chatroom: general, user: author, content: Faker::Movies::StarWars.quote)
+end
+
+10.times do
+  author = [john, michael].sample
+  Message.create(chatroom: random, user: author, content: Faker::Movies::BackToTheFuture.quote)
 end

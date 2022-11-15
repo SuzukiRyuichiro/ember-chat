@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources 'chatrooms', defaults: { format: :json }, only: %i[index show] do
-    resources 'messages', only: [:create]
-  end
+  jsonapi_resources :chatrooms
+  jsonapi_resources :messages
 end

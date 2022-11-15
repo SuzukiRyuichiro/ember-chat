@@ -1,2 +1,7 @@
-{{page-title "Chatroom"}}
-{{outlet}}
+{{page-title 'Chatroom'}}
+<LinkTo @route='chatrooms'>Go back to the chatroom list</LinkTo>
+<ul>
+  {{#each @model.messages as |message|}}
+    <li>{{message.content}}</li>
+  {{/each}}
+</ul>
