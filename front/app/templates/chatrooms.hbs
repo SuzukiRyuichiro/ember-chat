@@ -1,0 +1,7 @@
+{{page-title 'Chatrooms'}}
+<LinkTo @route='index'>Go back to home</LinkTo>
+<p class='text-lg'>Chatrooms available</p>
+
+{{#each @model as |chatroom|}}
+  <p>{{chatroom.name}}</p>
+{{/each}}
