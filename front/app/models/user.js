@@ -5,4 +5,12 @@ export default class UserModel extends Model {
   @attr('string') email;
   @attr('date') createdAt;
   @attr('date') updatedAt;
+
+  get firstName() {
+    return this.name.split(' ')[0];
+  }
+
+  get isJohn() {
+    return this.name === 'John Doe';
+  }
 }

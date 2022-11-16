@@ -1,7 +1,10 @@
 {{page-title 'Chatroom'}}
-<LinkTo @route='chatrooms'>Go back to the chatroom list</LinkTo>
-<ul>
-  {{#each @model.messages as |message|}}
-    <li>{{message.content}}</li>
-  {{/each}}
-</ul>
+<div class='flex h-full flex-col'>
+  <div class='p-2 border-b'>#{{@model.name}}</div>
+  <div class='flex-1 px-4 py-4 overflow-y-auto'>
+    {{#each @model.messages as |message|}}
+      <Chatroom::Chatbubble @message={{message}} />
+    {{/each}}
+  </div>
+  <Chatroom::Input />
+</div>

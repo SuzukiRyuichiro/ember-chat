@@ -1,3 +1,15 @@
-<div class='container mx-auto'>
-  {{outlet}}
+<div class='min-h-screen flex overflow-hidden h-full'>
+  <nav class='w-56 flex-none bg-indigo-100 px-2 max-h-screen'>
+    <p class='text-2xl font-bold'>
+      <LinkTo @route='index'>
+        Ember Chat
+      </LinkTo>
+    </p>
+  </nav>
+
+  <main class='flex-1 min-w-0 h-full overflow-auto bg-indigo-50 px-2'>
+
+    {{outlet}}
+
+  </main>
 </div>

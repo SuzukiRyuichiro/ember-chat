@@ -6,7 +6,7 @@ export default class ChatroomRoute extends Route {
 
   model({ chatroom_id }) {
     return this.store.findRecord('chatroom', chatroom_id, {
-      include: 'comments',
+      include: 'messages,messages.user',
     });
   }
 }
