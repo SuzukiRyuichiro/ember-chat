@@ -69,5 +69,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@rails/actioncable": "^7.0.4"
   }
 }
