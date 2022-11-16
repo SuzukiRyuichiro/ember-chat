@@ -5,10 +5,7 @@
     class='flex-none flex flex-col items-center space-y-1
       {{if @message.user.isJohn "ml-4" "mr-4"}}'
   >
-    <img
-      class='rounded-full w-10 h-10'
-      src='https://thispersondoesnotexist.com/image'
-    />
+    <img class='rounded-full w-10 h-10' src='/icon.png' />
     <p class='block text-xs'>{{@message.user.firstName}}</p>
   </div>
   <div
@@ -22,7 +19,7 @@
   >
     <div>{{@message.content}}</div>
 
-    {{!-- arrow --}}
+    {{! arrow }}
     {{#if @message.user.isJohn}}
       <div
         class='absolute right-0 top-1/2 transform translate-x-1/2 rotate-45 w-2 h-2 bg-indigo-100'
@@ -32,6 +29,6 @@
         class='absolute left-0 top-1/2 transform -translate-x-1/2 rotate-45 w-2 h-2 bg-indigo-400'
       ></div>
     {{/if}}
-    {{!-- end arrow --}}
+    {{! end arrow }}
   </div>
 </div>
