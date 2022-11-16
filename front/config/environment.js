@@ -25,6 +25,8 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable';
+    ENV.APP.API_HOST = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -41,6 +43,8 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    // TODO: change this
+    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable';
   }
 
   return ENV;

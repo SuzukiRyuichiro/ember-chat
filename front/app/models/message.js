@@ -5,6 +5,6 @@ export default class MessageModel extends Model {
   @attr('date') createdAt;
   @attr('date') updatedAt;
 
-  @belongsTo('user') user;
-  @belongsTo('chatroom') chatroom;
+  @belongsTo('user', { async: true }) user;
+  @belongsTo('chatroom', { async: true }) chatroom;
 }

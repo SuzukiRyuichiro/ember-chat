@@ -5,5 +5,5 @@ export default class ChatroomModel extends Model {
   @attr('date') createdAt;
   @attr('date') updatedAt;
 
-  @hasMany('message') messages;
+  @hasMany('message', { inverse: null, async: true }) messages;
 }
