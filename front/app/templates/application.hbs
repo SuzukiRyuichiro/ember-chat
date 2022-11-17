@@ -5,6 +5,11 @@
         Ember Chat
       </LinkTo>
     </p>
+    {{#each @model as |chatroom|}}
+      <LinkTo @route='chatroom' @model={{chatroom}}>
+        <p class=''>#{{chatroom.name}}</p>
+      </LinkTo>
+    {{/each}}
   </nav>
 
   <main class='flex-1 min-w-0 h-full overflow-auto bg-indigo-50 px-2'>

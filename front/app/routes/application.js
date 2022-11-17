@@ -1,10 +1,10 @@
 import Route from '@ember/routing/route';
 import { service } from '@ember/service';
 
-export default class ChatroomsRoute extends Route {
+export default class ApplicationRoute extends Route {
   @service store;
 
   model() {
-    return this.store.findAll('chatroom', { include: 'messages' });
+    return this.store.findAll('chatroom');
   }
 }

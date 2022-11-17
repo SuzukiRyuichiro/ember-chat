@@ -1,9 +1,0 @@
-{{page-title 'Chatrooms'}}
-<p class='text-lg'>Chatrooms available</p>
-
-{{#each @model as |chatroom|}}
-  <p><LinkTo
-      @route='chatroom'
-      @model={{chatroom}}
-    >{{chatroom.name}}</LinkTo></p>
-{{/each}}
