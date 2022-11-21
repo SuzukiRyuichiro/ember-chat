@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (environment) {
   const ENV = {
@@ -17,7 +17,7 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-  };
+  }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -25,27 +25,27 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable';
-    ENV.APP.API_HOST = 'http://localhost:3000';
+    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable'
+    ENV.APP.API_HOST = 'http://localhost:3000'
   }
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.locationType = 'none';
+    ENV.locationType = 'none'
 
     // keep test console output quieter
-    ENV.APP.LOG_ACTIVE_GENERATION = false;
-    ENV.APP.LOG_VIEW_LOOKUPS = false;
+    ENV.APP.LOG_ACTIVE_GENERATION = false
+    ENV.APP.LOG_VIEW_LOOKUPS = false
 
-    ENV.APP.rootElement = '#ember-testing';
-    ENV.APP.autoboot = false;
+    ENV.APP.rootElement = '#ember-testing'
+    ENV.APP.autoboot = false
   }
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
     // TODO: change this
-    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable';
+    ENV.APP.WEB_SOCKET_URL = 'ws://localhost:3000/cable'
   }
 
-  return ENV;
-};
+  return ENV
+}

@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import Ember from 'ember'
 
 declare global {
   // Prevents ESLint from "fixing" this via its auto-fix to turn it into a type
@@ -8,16 +8,16 @@ declare global {
   // interface Function extends Ember.FunctionPrototypeExtensions {}
 }
 
-export {};
+export {}
 
-import '@glint/environment-ember-loose';
+import '@glint/environment-ember-loose'
 
 // NOTE: This import won't be necessary after Glint 0.8
-import '@glint/environment-ember-loose/native-integration';
+import '@glint/environment-ember-loose/native-integration'
 
 // FIXME: Remove this catch-all before merge
 declare module '@glint/environment-ember-loose/registry' {
   export default interface Registry {
-    [key: string]: any;
+    [key: string]: any
   }
 }

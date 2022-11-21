@@ -1,12 +1,12 @@
-import EmberRouter from '@ember/routing/router';
-import config from 'front/config/environment';
+import EmberRouter from '@ember/routing/router'
+import config from 'front/config/environment'
 
 export default class Router extends EmberRouter {
-  location = config.locationType;
-  rootURL = config.rootURL;
+  location = config.locationType
+  rootURL = config.rootURL
 }
 
 Router.map(function () {
-  this.route('chatrooms');
-  this.route('chatroom', { path: '/chatrooms/:chatroom_id' });
-});
+  this.route('chatrooms')
+  this.route('chatroom', { path: '/chatrooms/:chatroom_id' })
+})

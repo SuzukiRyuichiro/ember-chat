@@ -1,11 +1,12 @@
 {
-  "data": [{
-    "id": 1,
-    "attributes": {
-      "name": "General"
-    }
-  },
-  {
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "General"
+      }
+    },
+    {
       "id": 2,
       "attributes": {
         "name": "Random"
