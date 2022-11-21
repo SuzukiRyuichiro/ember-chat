@@ -2,6 +2,8 @@ class MessageResource < JSONAPI::Resource
   after_create :broadcast
 
   attributes :content
+  attribute :created_at
+
   has_one :chatroom
   has_one :user
 
