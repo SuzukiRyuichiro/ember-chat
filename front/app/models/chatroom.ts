@@ -7,3 +7,9 @@ export default class ChatroomModel extends Model {
   @hasMany('message', { inverse: null, async: true })
   declare messages: AsyncHasMany<MessageModel>
 }
+
+declare module 'ember-data/types/registries/model' {
+  export default interface ModelRegistry {
+    chatroom: ChatroomModel
+  }
+}
