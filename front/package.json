@@ -30,6 +30,7 @@
     "@glint/core": "^0.9.7",
     "@glint/environment-ember-loose": "^0.9.7",
     "@tsconfig/ember": "^1.0.1",
+    "@types/actioncable": "^5.2.7",
     "@types/ember": "^4.0.2",
     "@types/ember-data": "^4.4.6",
     "@types/ember-data__adapter": "^4.0.1",

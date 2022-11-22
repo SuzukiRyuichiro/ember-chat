@@ -27,7 +27,7 @@
     <Input
       class='w-full rounded-full border p-2 border-gray-200'
       @type='text'
-      @value={{this.message}}
+      @value={{this.content}}
       placeholder='Type a message'
     />
   </div>
@@ -38,6 +38,7 @@
     <button
       class='inline-flex hover:bg-indigo-50 rounded-full p-2'
       type='button'
+      {{on 'click' this.sendMessage}}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'

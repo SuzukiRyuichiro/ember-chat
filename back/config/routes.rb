@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   jsonapi_resources :chatrooms
   jsonapi_resources :messages
+  jsonapi_resources :users
 end
